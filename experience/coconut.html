@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The Freshness Dilemma — Thanusha Panchal's global cold-chain supply network design for Thai coconut water: demand analysis, network design, sourcing, and scenario optimization."
+    />
+    <title>The Freshness Dilemma — Coconut Water Cold-Chain | Thanusha Panchal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <header class="navbar" id="navbar">
+      <div class="nav-inner">
+        <a href="../index.html#home" class="brand">Thanusha&nbsp;Panchal</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav-links" id="navLinks">
+          <a href="../index.html#about">About</a>
+          <a href="../index.html#projects">Projects</a>
+          <a href="../index.html#experience">Experience</a>
+          <a href="../index.html#achievements">Achievements</a>
+          <a href="../index.html#contact" class="nav-cta">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="exp-hero reveal">
+      <a href="../index.html#projects" class="back-link">← Back to all projects</a>
+      <p class="exp-meta">Supply Chain Analytics · Academic Capstone Project</p>
+      <h1>The Freshness Dilemma</h1>
+      <p class="exp-org">Building a Global Cold-Chain Supply Network for Thai Coconut Water</p>
+      <p class="exp-sub">Network Design · Sourcing · Scenario Optimization · Tableau</p>
+    </section>
+
+    <!-- ===== BODY ===== -->
+    <section class="exp-body">
+      <div class="reveal">
+        <h2>The business problem</h2>
+        <p>
+          Move a highly perishable product 8,000 miles while beating giants like
+          Costco on both freshness and cost. The mission: execute a global cold-chain
+          flow for <strong>11,558,644 units</strong> of aromatic Thai coconut water,
+          maximizing 2026 margins by capitalizing on the 3.20 THB/unit Thai price floor
+          while managing high-cost U.S. West Coast and NYC ports.
+        </p>
+
+        <h2>U.S. demand analysis</h2>
+        <ul class="exp-points">
+          <li>Modeled the target market as 2% of total beverage volume across 1,200 stores (Costco, Trader Joe's, Whole Foods).</li>
+          <li>Costco was the dominant channel at 6.38M units, ahead of Whole Foods (2.83M) and Trader Joe's (2.35M).</li>
+          <li>The South and West regions drove the highest regional demand.</li>
+          <li>Shortlisted 7 warehouse candidates to guarantee geographic coverage of the 4 major port regions while allowing clustering efficiency.</li>
+        </ul>
+
+        <h2>Network &amp; port strategy</h2>
+        <ul class="exp-points">
+          <li>Clustered 1,200 stores into 7 distribution centers — DC4 emerged as the primary Northeast hub (363 stores, 3.5M units).</li>
+          <li>Mapped store clusters geographically in Tableau, isolating DC6 (Hawaii) and DC7 (Alaska) as remote, low-demand outliers.</li>
+          <li>Evaluated four U.S. ports — Los Angeles, Houston, Savannah, and New York City — against distance to each DC.</li>
+        </ul>
+
+        <h2>Sourcing from Thailand</h2>
+        <ul class="exp-points">
+          <li>Built a weighted supplier scorecard across 8 KPIs: annual capacity, yield, harvest/month, distance to plant, lead time, damage rate, sensory quality, and cost/unit.</li>
+          <li>Selected the 5 most reliable farms to feed the Laem Chabang processing facility — total capacity 13.4M units against 11.56M demand (a 1.86M-unit surplus buffer).</li>
+        </ul>
+
+        <h2>Scenario analysis &amp; optimal flow</h2>
+        <ul class="exp-points">
+          <li>Stress-tested demand at 2%, 3%, and 4%: 5 suppliers meet 2%, 8 meet 3%, while 4% needs 20 suppliers and still leaves a 2.98M-unit deficit.</li>
+          <li>Identified 4% as the network "sweet spot" — ~35 containers/month flow smoothly through the 4 ports without dock bottlenecks.</li>
+          <li>Recommended consolidating from 7 DCs to 4 if demand stays at 2%, to spread cold-chain fixed costs efficiently.</li>
+          <li>Solved the port-to-DC assignment as an optimization model, minimizing total distance × units shipped while meeting all DC demand.</li>
+        </ul>
+      </div>
+
+      <aside class="exp-side reveal">
+        <h3>By the numbers</h3>
+        <ul class="exp-points" style="margin-bottom: 1.5rem">
+          <li>11.56M units / year</li>
+          <li>1,200 retail stores</li>
+          <li>7 distribution centers</li>
+          <li>4 ports: LA · Houston · Savannah · NYC</li>
+          <li>5 Thai farms selected</li>
+        </ul>
+        <h3>Tools &amp; skills</h3>
+        <ul class="tags">
+          <li>Tableau</li><li>Excel Optimization</li><li>Network Design</li>
+          <li>Clustering</li><li>Supplier Scorecard</li><li>Scenario Analysis</li>
+          <li>Cost Modeling</li><li>Cold Chain</li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- ===== GALLERY ===== -->
+    <section class="gallery-section reveal">
+      <h2>Project slides</h2>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="../assets/images/coconut-1.jpg" alt="Coconut project slide 1"
+            onerror="this.style.display='none';this.parentNode.classList.add('gallery-placeholder');this.parentNode.setAttribute('data-label','Add coconut-1.jpg');" />
+        </div>
+        <div class="gallery-item">
+          <img src="../assets/images/coconut-2.jpg" alt="Coconut project slide 2"
+            onerror="this.style.display='none';this.parentNode.classList.add('gallery-placeholder');this.parentNode.setAttribute('data-label','Add coconut-2.jpg');" />
+        </div>
+        <div class="gallery-item">
+          <img src="../assets/images/coconut-3.jpg" alt="Coconut project slide 3"
+            onerror="this.style.display='none';this.parentNode.classList.add('gallery-placeholder');this.parentNode.setAttribute('data-label','Add coconut-3.jpg');" />
+        </div>
+        <div class="gallery-item">
+          <img src="../assets/images/coconut-4.jpg" alt="Coconut project slide 4"
+            onerror="this.style.display='none';this.parentNode.classList.add('gallery-placeholder');this.parentNode.setAttribute('data-label','Add coconut-4.jpg');" />
+        </div>
+        <div class="gallery-item">
+          <img src="../assets/images/coconut-5.jpg" alt="Coconut project slide 5"
+            onerror="this.style.display='none';this.parentNode.classList.add('gallery-placeholder');this.parentNode.setAttribute('data-label','Add coconut-5.jpg');" />
+        </div>
+        <div class="gallery-item">
+          <img src="../assets/images/coconut-6.jpg" alt="Coconut project slide 6"
+            onerror="this.style.display='none';this.parentNode.classList.add('gallery-placeholder');this.parentNode.setAttribute('data-label','Add coconut-6.jpg');" />
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Thanusha Panchal · Built with care in Chicago.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
