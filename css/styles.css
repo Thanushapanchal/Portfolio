@@ -139,6 +139,9 @@ a { color: inherit; text-decoration: none; }
   margin-bottom: 0.85rem;
 }
 .section-head h2 { font-size: clamp(2rem, 4.5vw, 2.9rem); color: var(--navy); letter-spacing: -0.01em; }
+/* Uppercase section titles, sized down a touch so caps don't look oversized */
+.section-head h2.caps-title { text-transform: uppercase; font-size: clamp(1.7rem, 4vw, 2.35rem); letter-spacing: 0.03em; }
+.exp-feature-text h3.caps-sub { text-transform: uppercase; font-size: 1.2rem; letter-spacing: 0.03em; }
 
 /* ===== About ===== */
 .about-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 3.5rem; align-items: start; }
@@ -277,6 +280,7 @@ a { color: inherit; text-decoration: none; }
 .exp-feature-text .tl-org { color: var(--muted); font-weight: 500; }
 .exp-feature-text ul { padding-left: 1.1rem; color: var(--muted); margin-top: 0.85rem; }
 .exp-feature-text li { margin-bottom: 0.45rem; }
+.exp-feature-text .volunteer-text { color: var(--muted); margin-top: 0.5rem; }
 .exp-feature-head { margin-bottom: 1.75rem; }
 .exp-feature-head h3 { font-size: 1.4rem; color: var(--navy); margin: 0.25rem 0 0.1rem; }
 .exp-feature-head .tl-org { color: var(--muted); font-weight: 500; }
