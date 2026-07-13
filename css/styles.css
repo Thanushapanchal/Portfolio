@@ -813,3 +813,28 @@ a { color: inherit; text-decoration: none; }
   }
   .nav-links.open { transform: none; opacity: 1; pointer-events: auto; }
 }
+
+/* ===== Print / PDF export ===== */
+@media print {
+  * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+  @page { margin: 12mm; }
+  body { background: #fff !important; }
+  .navbar { position: static !important; background: #fff !important; box-shadow: none !important; border: none !important; }
+  .nav-toggle, .slideshow-arrow, .carousel-arrow, .slideshow-count { display: none !important; }
+  .hero { background: #fff !important; }
+  /* show all scroll-reveal content */
+  .reveal { opacity: 1 !important; transform: none !important; }
+  /* keep cards/photos from splitting across pages */
+  .project, .exp-feature, .skill-card, .ach-card, .stat, .recognitions, .extra,
+  .exp-gallery-item, .carousel-item, .polaroid, .exp-logo, .about-highlights li {
+    break-inside: avoid; page-break-inside: avoid;
+  }
+  /* let the carousel show every photo instead of a single row */
+  .carousel-track { overflow: visible !important; flex-wrap: wrap !important; }
+  /* lighten heavy shadows for a clean print */
+  .project, .exp-feature, .stat, .skill-card, .slideshow, .exp-gallery-item,
+  .carousel-item, .project-media, .portrait-frame, .photo-frame, .exp-logo img {
+    box-shadow: none !important;
+  }
+  a { color: var(--navy) !important; text-decoration: none; }
+}
